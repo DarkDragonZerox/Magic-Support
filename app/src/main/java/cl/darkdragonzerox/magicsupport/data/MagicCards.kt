@@ -1,7 +1,10 @@
 package cl.darkdragonzerox.magicsupport.data
 
+import androidx.room.Embedded
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
-
+@Entity(tableName = "magiccards")
 data class MagicCards(val name:String,
                       val manaCost:String,
                       val cmc:Int,
@@ -10,7 +13,7 @@ data class MagicCards(val name:String,
                       val type:String,
                       val supertypes:List<String>,
                       val types:List<String>,
-                      val subtypes:List<String>
+                      val subtypes:List<String>,
                       val rarity:String,
                       val set:String,
                       val setName:String,
@@ -20,13 +23,13 @@ data class MagicCards(val name:String,
                       val layout:String,
                       val multiverseid:Int,
                       val imageUrl:String,
-                      val rulings:Rulings,
-                      val foreignNames: ForeignNames,
-                      val printings:List<String>
+                      @Embedded val rulings:Rulings,
+                      @Embedded val foreignNames: ForeignNames,
+                      val printings:List<String>,
                       val originalText:String,
                       val originalType:String,
-                      val legalities:Legalities,
-                      val id :String
+                      @Embedded val legalities:Legalities,
+                      @PrimaryKey val id :String
                       )
 data class Rulings(val date:String,val text:String)
 data class ForeignNames (val name:String,
