@@ -24,4 +24,8 @@ class Repository {
         return  magicDatabase.MagicDao().getCardDetail(idCode)
     }
 
+    fun loadCard():LiveData<List<MagicCards>>{
+        return magicDatabase.MagicDao().getMagicCards()
+    }
+
 }
