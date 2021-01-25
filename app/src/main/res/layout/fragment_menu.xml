@@ -6,22 +6,81 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/tvCartas"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:text="Cartas"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ibCartas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ibCartas"
+        app:layout_constraintTop_toTopOf="@+id/ibCartas" />
+
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/ibCartas"
         android:layout_width="59dp"
         android:layout_height="55dp"
-        app:srcCompat="@android:drawable/arrow_down_float"
-        tools:layout_editor_absoluteX="34dp"
-        tools:layout_editor_absoluteY="151dp" />
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
 
     <TextView
-        android:id="@+id/textView5"
-        android:layout_width="88dp"
-        android:layout_height="37dp"
+        android:id="@+id/tvUtilidades"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:text="Utilidades"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ibUtilidades"
+        app:layout_constraintStart_toEndOf="@+id/ibUtilidades"
+        app:layout_constraintTop_toTopOf="@+id/ibUtilidades" />
+
+    <ImageButton
+        android:id="@+id/ibUtilidades"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="248dp"
-        android:text="TextView"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibCartas"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <TextView
+        android:id="@+id/tvAgradecimientos"
+        android:layout_width="wrap_content"
+        android:layout_height="19dp"
+        android:layout_marginStart="16dp"
+        android:text="Agradecimientos"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/ibAgradecimientos"
+        app:layout_constraintStart_toEndOf="@+id/ibAgradecimientos"
+        app:layout_constraintTop_toTopOf="@+id/ibAgradecimientos" />
+
+    <ImageButton
+        android:id="@+id/ibAgradecimientos"
+        android:layout_width="59dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibUtilidades"
+        app:srcCompat="@android:drawable/arrow_down_float" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="228dp"
+        android:layout_height="231dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton"
-        tools:layout_editor_absoluteY="161dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ibAgradecimientos"
+        app:srcCompat="@drawable/magic_the_gathering_clipart_6" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
