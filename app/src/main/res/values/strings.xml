@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Magic Support</string>
+    <string name="nombre">Nombre</string>
+    <string name="manacost">Manacost</string>
+    <string name="tipo">Tipo</string>
+    <string name="set">Set</string>
+    <string name="nombrecarta">Nombre:</string>
+    <string name="costo_de_mana">Costo de Mana</string>
+    <string name="tipocarta">Tipo:</string>
+    <string name="setcarta">Set:</string>
 </resources>

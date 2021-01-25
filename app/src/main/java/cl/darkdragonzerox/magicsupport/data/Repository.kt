@@ -1,5 +1,6 @@
 package cl.darkdragonzerox.magicsupport.data
 
+import android.util.Log
 import androidx.lifecycle.LiveData
 
 class Repository {
@@ -11,12 +12,13 @@ class Repository {
             true ->{
                 response.body()?.let {
                     magicDatabase.MagicDao().LoadAllCards(it)
+                    Log.d("CARGA Api","${it.size}")
                 }
 
 
             }
             false -> {
-
+                    Log.d("carga", "no carga")
             }
         }
     }

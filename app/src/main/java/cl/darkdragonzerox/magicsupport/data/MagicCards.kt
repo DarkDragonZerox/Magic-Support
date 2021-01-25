@@ -23,12 +23,12 @@ data class MagicCards(val name:String,
                       val layout:String,
                       val multiverseid:Int,
                       val imageUrl:String,
-                      @Embedded val rulings:Rulings,
-                      @Embedded val foreignNames: ForeignNames,
+                      @Embedded(prefix = "rulings_") val rulings:Rulings?,
+                      @Embedded(prefix ="foreing_ ") val foreignNames: ForeignNames?,
                       val printings:List<String>,
                       val originalText:String,
                       val originalType:String,
-                      @Embedded val legalities:Legalities,
+                      @Embedded (prefix="legal_")val legalities:Legalities,
                       @PrimaryKey val id :String
                       )
 data class Rulings(val date:String,val text:String)
