@@ -38,7 +38,7 @@ class CardAdapter(val listener:OnItemClickListener): RecyclerView.Adapter<CardVH
 class CardVH (private val binding: ItemListCardBinding):RecyclerView.ViewHolder(binding.root){
     fun bind(magicCards: MagicCards){
         binding.tvName.text=magicCards.name
-        binding.tvManaCost.text=magicCards.manaCost
+        binding.tvManaCost.text=magicCards.manaCost.toString()
         binding.tvTipo.text=magicCards.type
         binding.tvSet.text=magicCards.setName
         binding.ivCard.load(magicCards.imageUrl)

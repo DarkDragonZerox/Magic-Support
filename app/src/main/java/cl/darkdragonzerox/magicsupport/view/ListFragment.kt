@@ -19,6 +19,7 @@ class ListFragment : Fragment(), OnItemClickListener {
 
 
 
+
     override fun onCreateView(
             inflater: LayoutInflater,
             container: ViewGroup?,
@@ -44,12 +45,12 @@ class ListFragment : Fragment(), OnItemClickListener {
     }
 
     override fun onClick(id: String) {
-      /*  activity?.supportFragmentManager?.
+       /*activity?.supportFragmentManager?.
         beginTransaction()?.
         replace(R.id.main_container,DetailFragment(id))?.
         addToBackStack("back")?.
-        commit()
-*/
+        commit()*/
+
     }
 
 
