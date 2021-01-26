@@ -11,8 +11,8 @@ class Repository {
         when(response.isSuccessful){
             true ->{
                 response.body()?.let {
-                    magicDatabase.MagicDao().LoadAllCards(it)
-                    Log.d("CARGA Api","${it.size}")
+                    magicDatabase.MagicDao().LoadAllCards(it.cards)
+                    Log.d("CARGA Api","${it.cards.size}")
                 }
 
 

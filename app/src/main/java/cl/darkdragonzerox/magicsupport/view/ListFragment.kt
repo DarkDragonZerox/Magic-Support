@@ -7,10 +7,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import cl.darkdragonzerox.magicsupport.R
 import cl.darkdragonzerox.magicsupport.databinding.FragmentListBinding
 import cl.darkdragonzerox.magicsupport.model.CardViewModel
+import com.squareup.picasso.Picasso
+import jp.wasabeef.picasso.transformations.RoundedCornersTransformation
 
 
 class ListFragment : Fragment(), OnItemClickListener {
@@ -30,7 +33,8 @@ class ListFragment : Fragment(), OnItemClickListener {
         val adapter= CardAdapter(this)
         val recycler=binding.rvCard
         recycler.adapter=adapter
-        recycler.layoutManager= LinearLayoutManager(context)
+        recycler.layoutManager= GridLayoutManager(context,1)
+
 
         viewModel.cardlist.observe(viewLifecycleOwner, {cardlist->cardlist?.let {
             adapter.updateCard(it)

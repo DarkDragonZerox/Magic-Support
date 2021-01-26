@@ -30,11 +30,12 @@
 
             <ImageView
                 android:id="@+id/ivCard"
-                android:layout_width="98dp"
-                android:layout_height="145dp"
+                android:layout_width="114dp"
+                android:layout_height="190dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="16dp"
                 android:layout_marginBottom="16dp"
+
 
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

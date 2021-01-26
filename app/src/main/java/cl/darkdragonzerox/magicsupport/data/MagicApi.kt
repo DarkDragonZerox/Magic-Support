@@ -5,5 +5,5 @@ import retrofit2.http.GET
 
 interface MagicApi {
     @GET("/v1/cards?page=1")
-    suspend fun getMagicCards(): Response<List<MagicCards>>
+    suspend fun getMagicCards(): Response<Recibidor>
 }
