@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
 import androidx.fragment.app.viewModels
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -18,7 +19,7 @@ import jp.wasabeef.picasso.transformations.RoundedCornersTransformation
 
 class ListFragment : Fragment(), OnItemClickListener {
     private lateinit var binding: FragmentListBinding
-    private val viewModel : CardViewModel by viewModels()
+    private val viewModel : CardViewModel by activityViewModels()
 
 
 
@@ -49,11 +50,11 @@ class ListFragment : Fragment(), OnItemClickListener {
     }
 
     override fun onClick(id: String) {
-       /*activity?.supportFragmentManager?.
+       activity?.supportFragmentManager?.
         beginTransaction()?.
         replace(R.id.main_container,DetailFragment(id))?.
         addToBackStack("back")?.
-        commit()*/
+        commit()
 
     }
 

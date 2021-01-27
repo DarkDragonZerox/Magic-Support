@@ -7,52 +7,38 @@
     android:background="@color/black">
 
     <TextView
-        android:id="@+id/tvFuerza"
-        android:layout_width="32dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="8dp"
+        android:id="@+id/tvedicion"
+        android:layout_width="198dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/tvTextDetail2" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvflavor" />
 
     <TextView
-        android:id="@+id/textView13"
-        android:layout_width="32dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="8dp"
-        android:text="/"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTextDetail2"
-        tools:layout_editor_absoluteX="339dp" />
-
-    <TextView
-        android:id="@+id/tvTextDetail2"
-        android:layout_width="396dp"
-        android:layout_height="122dp"
+        android:id="@+id/tvflavor"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="TextView"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTextDetail" />
 
-    <ImageButton
-        android:id="@+id/ibCardDet"
+    <ImageView
+        android:id="@+id/ivCardDet"
         android:layout_width="256dp"
         android:layout_height="339dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:srcCompat="@tools:sample/avatars" />
@@ -67,7 +53,7 @@
         android:textColor="@color/white"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ibCardDet" />
+        app:layout_constraintTop_toBottomOf="@+id/ivCardDet" />
 
     <TextView
         android:id="@+id/tvTipoDetalle"
@@ -83,14 +69,14 @@
 
     <TextView
         android:id="@+id/tvTextDetail"
-        android:layout_width="396dp"
-        android:layout_height="122dp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
         android:text="TextView"
         android:textColor="@color/white"
-        android:textSize="18sp"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvTipoDetalle" />
@@ -100,28 +86,11 @@
         android:layout_width="195dp"
         android:layout_height="26dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
         android:text="TextView"
         android:textColor="@color/white"
         android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvTextDetail2" />
+        app:layout_constraintTop_toBottomOf="@+id/tvedicion" />
 
-    <TextView
-        android:id="@+id/tvResistencia"
-        android:layout_width="32dp"
-        android:layout_height="28dp"
-        android:layout_marginTop="29dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="TextView"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="18sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
-        app:layout_constraintTop_toBottomOf="@+id/tvTextDetail2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
