@@ -12,9 +12,9 @@ import cl.darkdragonzerox.magicsupport.databinding.FragmentDetailBinding
 import cl.darkdragonzerox.magicsupport.model.CardViewModel
 import coil.load
 
-class DetailFragment(id:String) : Fragment(), OnItemClickListener {
+class DetailFragment(id:String) : Fragment() {
     lateinit var binding: FragmentDetailBinding
-    private val viewModel:CardViewModel by activityViewModels()
+    private val viewModel:CardViewModel by viewModels()
     private val idcode=id
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         binding= FragmentDetailBinding.inflate(layoutInflater)
@@ -27,7 +27,8 @@ class DetailFragment(id:String) : Fragment(), OnItemClickListener {
              binding.tvflavor.text=it.flavor
              binding.tvArtista.text=it.artist
              binding.tvedicion.text=it.setName
-
+             binding.ivCardDet.setOnClickListener { activity?.let {  it.supportFragmentManager.beginTransaction()
+                     .replace(R.id.main_container,CardFragment(idcode)).addToBackStack("back").commit()  } }
         }
 
         })
@@ -35,13 +36,7 @@ class DetailFragment(id:String) : Fragment(), OnItemClickListener {
         return binding.root
     }
 
-    override fun onClick(id: String) {
-        activity?.supportFragmentManager?.
-        beginTransaction()?.
-        replace(R.id.main_container,CardFragment(id))?.
-        addToBackStack("back")?.
-        commit()
-    }
+
 
 
 }
