@@ -38,18 +38,24 @@
         android:id="@+id/btAumentar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="104dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="50dp"
+        android:background="@android:color/black"
+        android:backgroundTint="@color/black"
+        android:backgroundTintMode="add"
         android:text="Aumentar"
+        android:textColorHighlight="#FFFFFF"
+        android:textColorHint="#7B1515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel" />
+        app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel"
+        app:rippleColor="@color/teal_200" />
 
     <Button
         android:id="@+id/btDisminuir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="108dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="28dp"
         android:text="Disminuir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel" />
@@ -58,12 +64,12 @@
         android:id="@+id/btReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="28dp"
         android:text="Reset"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btAumentar" />
+        app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel" />
 
     <Button
         android:id="@+id/btCoin"

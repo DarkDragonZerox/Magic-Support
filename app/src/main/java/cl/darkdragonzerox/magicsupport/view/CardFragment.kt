@@ -11,6 +11,8 @@ import androidx.fragment.app.viewModels
 import cl.darkdragonzerox.magicsupport.databinding.FragmentCardBinding
 import cl.darkdragonzerox.magicsupport.model.CardViewModel
 import coil.load
+import coil.transform.RoundedCornersTransformation
+
 
 class CardFragment(id:String): Fragment() {
     lateinit var binding: FragmentCardBinding
@@ -20,7 +22,10 @@ class CardFragment(id:String): Fragment() {
       binding= FragmentCardBinding.inflate(layoutInflater)
        viewModel.getCardDetail(idcode).observe(viewLifecycleOwner,{
            it?.let{
-               binding.ivFull.load(it.imageUrl)
+               binding.ivFull.load(it.imageUrl){
+                   crossfade(true)
+                   crossfade(250)
+                                  }
            }
        })
 

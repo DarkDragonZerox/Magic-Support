@@ -13,8 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import cl.darkdragonzerox.magicsupport.R
 import cl.darkdragonzerox.magicsupport.databinding.FragmentListBinding
 import cl.darkdragonzerox.magicsupport.model.CardViewModel
-import com.squareup.picasso.Picasso
-import jp.wasabeef.picasso.transformations.RoundedCornersTransformation
+
 
 
 class ListFragment : Fragment(), OnItemClickListener {

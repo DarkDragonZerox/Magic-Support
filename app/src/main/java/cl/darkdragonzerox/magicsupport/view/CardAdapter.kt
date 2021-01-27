@@ -9,9 +9,7 @@ import cl.darkdragonzerox.magicsupport.R
 import cl.darkdragonzerox.magicsupport.data.MagicCards
 import cl.darkdragonzerox.magicsupport.databinding.ItemListCardBinding
 import coil.load
-import com.bumptech.glide.Glide
-import com.squareup.picasso.Picasso
-import jp.wasabeef.picasso.transformations.RoundedCornersTransformation
+
 
 class CardAdapter(val listener:OnItemClickListener): RecyclerView.Adapter<CardVH>() {
     private val cardList= mutableListOf<MagicCards>()
