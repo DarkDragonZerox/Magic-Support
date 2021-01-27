@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/_lsmuntapggntbihq0i5pkpn3q_cc92b9e3f2ab09636a499fc6bcd5ae34"
+    >
 
     <TextView
         android:id="@+id/tvVidas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="64dp"
+        android:layout_marginTop="124dp"
         android:text="Vidas"
         android:textColor="@color/white"
         android:textSize="64sp"
 
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,8 +27,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="Vidas"
-        android:textSize="50sp"
         android:textColor="@color/white"
+        android:textSize="50sp"
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,8 +38,8 @@
         android:id="@+id/btAumentar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="120dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="104dp"
         android:text="Aumentar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel" />
@@ -46,8 +48,8 @@
         android:id="@+id/btDisminuir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="120dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="36dp"
         android:text="Disminuir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel" />
@@ -56,9 +58,10 @@
         android:id="@+id/btReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="4dp"
         android:text="Reset"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btAumentar" />
 
@@ -66,10 +69,11 @@
         android:id="@+id/btCoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="24dp"
         android:text="Lanzar moneda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -78,8 +82,8 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="76dp"
         android:text="Cara o Sello"
+        android:textColor="@color/black"
         android:textSize="50sp"
-        android:textColor="@color/white"
         app:layout_constraintBottom_toTopOf="@+id/btCoin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
