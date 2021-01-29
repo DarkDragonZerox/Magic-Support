@@ -4,14 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/_lsmuntapggntbihq0i5pkpn3q_cc92b9e3f2ab09636a499fc6bcd5ae34"
-    >
+    android:background="@drawable/_lsmuntapggntbihq0i5pkpn3q_cc92b9e3f2ab09636a499fc6bcd5ae34">
 
     <TextView
         android:id="@+id/tvVidas"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="80dp"
         android:text="Vidas"
         android:textColor="@color/white"
         android:textSize="64sp"
@@ -36,13 +35,12 @@
 
     <Button
         android:id="@+id/btAumentar"
+
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="50dp"
-        android:background="@android:color/black"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="70dp"
         android:backgroundTint="@color/black"
-        android:backgroundTintMode="add"
         android:text="Aumentar"
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#7B1515"
@@ -54,8 +52,9 @@
         android:id="@+id/btDisminuir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/black"
         android:text="Disminuir"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel" />
@@ -64,10 +63,10 @@
         android:id="@+id/btReset"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="70dp"
+        android:backgroundTint="@color/black"
         android:text="Reset"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tvVidasLabel" />
 
@@ -75,11 +74,11 @@
         android:id="@+id/btCoin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="28dp"
+        android:backgroundTint="@color/black"
         android:text="Lanzar moneda"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
